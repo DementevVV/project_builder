@@ -1,4 +1,3 @@
-# encoding: utf-8
 #!/usr/bin/env ruby
 require 'json'
 
@@ -61,7 +60,7 @@ class AppBuilder
 end
 
 ## new app
-app = AppBuilder.new(:source_file => '/Users/i/Desktop/example.json')
+app = AppBuilder.new(:source_file => 'example.json')
 
 ## parse json
 data_hash = app.read_json
@@ -74,7 +73,3 @@ app.db(data_hash)
 
 ## app skeleton
 app.skeleton(data_hash)
-
-
-
-

@@ -1,0 +1,27 @@
+{
+  "app_path": "/path/to/projects_folder",
+  "app_name": "my_app_name",
+  "angular_js_material": true,
+  "font_awesome": true,
+  "turbolinks": false,
+  "gems": ["gem 'devise'"],
+  "controllers": {
+    "flow": ["index", "about"],
+    "categories": ["index", "show"]
+  },
+  "scaffolds": {
+    "product": {
+      "name": "string",
+      "description": "text"
+    }
+  },
+  "models": {
+    "category": {
+      "name": "string"
+    },
+    "subcategory": {
+      "name": "string",
+      "category": "belongs_to"
+    }
+  }
+}
