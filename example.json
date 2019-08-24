@@ -1,10 +1,11 @@
 {
-  "app_path": "/path/to/projects_folder",
+  "app_path": "/Users/i/Projects",
   "app_name": "my_app_name",
   "angular_js_material": true,
   "font_awesome": true,
-  "turbolinks": false,
-  "gems": ["gem 'devise'"],
+  "turbolinks": false, // false - remove turbolinks; true - leave
+  "gems": ["gem 'devise'", "gem 'activeadmin'", "gem 'cancancan'"],
+  "devise": true,
   "controllers": {
     "flow": ["index", "about"],
     "categories": ["index", "show"]
